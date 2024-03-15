@@ -22,7 +22,7 @@ public class TestHomeFragment {
             new ActivityTestRule<>(MainActivity.class);
 
     @Test
-    public void testName() {
+    public void homeFragmentTest() {
         ViewInteraction mainText = onView(withId(R.id.text_home));
         mainText.check(matches(withText("This is home fragment")));
     }
